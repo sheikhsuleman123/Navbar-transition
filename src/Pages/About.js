@@ -1,31 +1,35 @@
 import React, {Component} from 'react'
+import pic from '../images/pic.jpg'
+import pic2 from '../images/pic2.PNG'
 
 class About extends Component {
     render() {
-        return(
-            <div className="page">
-                <div className="container">
-					<div className="row">
-						<div className="col-md-12">
-							<div class="jumbotron">
-								<h1 class="display-4">{this.props.title}</h1>
-								<p class="lead">
-									This is a simple hero unit, a simple jumbotron-style component for calling extra
-									attention to featured content or information.
-								</p>
-								<hr class="my-4" />
-								<p>
-									It uses utility classes for typography and spacing to space content out within the
-									larger container.
-								</p>
-								<a class="btn btn-primary btn-lg" href="#" role="button">
-									Learn more
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-            </div>
+        return(		  
+		
+<div className="page" style={{ height: '500px', overflowY: 'scroll'}}>       
+ 
+  <div className="card" style={{width:'400px'}}>
+    <img className="card-img-top" src={pic} alt="Card image" style={{width:'100%'}} />
+    <div className="card-body">
+      <h4 className="card-title">John Doe</h4>
+      <p className="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" className="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
+  <br/>
+  <div className="card" style={{width:'400px'}}>
+    <img className="card-img-top" src={pic} alt="Card image" style={{width:'100%'}} />
+    <div className="card-body">
+      <h4 className="card-title">John Doe</h4>
+      <p className="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" className="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+ 
+
+</div>
+
         )
     }
 }
